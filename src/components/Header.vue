@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router';
+
 </script>
 
 <template>
@@ -9,7 +11,7 @@
     </header>
     <ul class="nav justify-content-center nav-underline">
         <li class="nav-item">
-            <a class="nav-link"href="#">HOME</a>
+            <RouterLink class="nav-link" to="/home">HOME</RouterLink>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">SOBRE</a>
