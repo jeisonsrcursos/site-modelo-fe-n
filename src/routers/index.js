@@ -1,15 +1,27 @@
 import Home from "../pages/Home.vue";
-import { VueRouter } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
+import Sobre from "../pages/Sobre.vue";
+import Contato from "../pages/Contato.vue";
 
-const routers = [
+const routes = [
     {
-        path: '/home',
+        path: '/',
         component: Home
+    },
+    {
+        path: '/sobre',
+        component: Sobre
+    },
+    {
+        path: '/contato',
+        component: Contato
     }
 ];
 
-const router = new VueRouter({
-    routers
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes,
 });
 
+export default router;
 

@@ -11,13 +11,13 @@ import { RouterLink } from 'vue-router';
     </header>
     <ul class="nav justify-content-center nav-underline">
         <li class="nav-item">
-            <RouterLink class="nav-link" to="/home">HOME</RouterLink>
+            <RouterLink class="nav-link" to="/">HOME</RouterLink>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">SOBRE</a>
+            <RouterLink class="nav-link" to="/sobre">SOBRE</RouterLink>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">CONTATO</a>
+            <RouterLink class="nav-link" to="/contato">CONTATO</RouterLink>
         </li>
     </ul>
 </template>
